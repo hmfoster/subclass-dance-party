@@ -28,6 +28,7 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    dancer.$node.data('dancer', dancer);
     window.dancers.push(dancer);
   });
 
@@ -35,5 +36,11 @@ $(document).ready(function(){
     for (var i = dancers.length - 1; i >= 0; i--) {
       dancers[i].lineUp();
     }
+  });
+
+  $(document.body).on('mouseover', '.chameleon', function(event) {
+    var target = $(event.target);
+    var chameleon = target.data('dancer'); // instance of chameleon dancer
+    chameleon.test();
   });
 });
