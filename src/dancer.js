@@ -28,6 +28,7 @@ Dancer.prototype.setPosition = function(top, left){
 };
 Dancer.prototype.lineUp = function(){
   this.$node.css({
+    'transition': 'left 2s ease-in-out',
     'left':'0'
   });
 };
