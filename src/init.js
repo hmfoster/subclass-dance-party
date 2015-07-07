@@ -30,6 +30,7 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
+
   $('.lineUpButton').on('click', function(){
     for (var i = dancers.length - 1; i >= 0; i--) {
       dancers[i].lineUp();

@@ -50,6 +50,10 @@ body, a:link, a:visited, a:active{
   -moz-animation-iteration-count:infinite;
 }
 
+.chameleon:hover {
+  border-radius: 0;
+}
+
 @keyframes colorCycle
 {
   0% {border-color:#006;}
