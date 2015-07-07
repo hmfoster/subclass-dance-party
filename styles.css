@@ -18,7 +18,7 @@ body, a:link, a:visited, a:active{
   background-color: #555;
 }
 .title{
-  background-color: #777;
+  background-color: #506D77;
 }
 .dancer{
   border:10px solid red;
@@ -59,5 +59,4 @@ body, a:link, a:visited, a:active{
   border-radius: 100%;
   height: 100px;
   width: 100px;
-  position: relative;
 }
