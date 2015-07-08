@@ -23,7 +23,7 @@ $(document).ready(function(){
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
+      ($("body").height() - 32) * Math.random() + 32,
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
@@ -41,6 +41,12 @@ $(document).ready(function(){
   $(document.body).on('mouseover', '.chameleon', function(event) {
     var target = $(event.target);
     var chameleon = target.data('dancer'); // instance of chameleon dancer
-    chameleon.test();
+    chameleon.fly();
+  });
+
+  $(document.body).on('click', '.giant', function(event) {
+    var target = $(event.target);
+    var giant = target.data('dancer'); // instance of giant dancer
+    giant.chase();
   });
 });

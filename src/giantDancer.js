@@ -3,7 +3,7 @@ var GiantDancer = function(top, left, timeBetweenSteps){
   this.$node.addClass('giant');
   this.$node.css({
     'border':'none',
-    'background': 'no-repeat center/100% url(img/pacman-ghost.png)'
+    'background': 'no-repeat center/100% url(img/pacman-ghost-red.png)'
   });
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function

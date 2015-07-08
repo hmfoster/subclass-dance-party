@@ -10,6 +10,6 @@ ChameleonDancer.prototype.test = function() {
   this.$node.css({
     'transform':'rotate(3600deg)'
   });
-  this.$node.animate({top: '0%'}, 200);
+  this.$node.animate({top: '5%'}, 200);
   // .animate( properties [, duration ] [, easing ] [, complete ] )
 };

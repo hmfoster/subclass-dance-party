@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0;
-  background: no-repeat center/100% url(img/lake.jpg);
+  background: no-repeat center/100% url(img/game.png);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -71,4 +71,11 @@ body, a:link, a:visited, a:active{
   border: 0;
   background: no-repeat center/100% url(img/pacman-ghost.png);
   transform: scale(4);
+}
+
+.blinky {
+  border: 0;
+  height: 64px;
+  width: 64px;
+  background: no-repeat center/100% url(img/pacman.png);
 }
