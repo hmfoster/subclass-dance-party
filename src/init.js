@@ -38,6 +38,12 @@ $(document).ready(function(){
     }
   });
 
+  $('.return').on('click', function() {
+    for (var i = dancers.length - 1; i >= 0; i--) {
+      dancers[i].goBack();
+    }
+  });
+
   $(document.body).on('mouseover', '.chameleon', function(event) {
     var target = $(event.target);
     var chameleon = target.data('dancer'); // instance of chameleon dancer

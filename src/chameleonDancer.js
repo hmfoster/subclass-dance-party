@@ -5,7 +5,7 @@ var ChameleonDancer = function(top, left, timeBetweenSteps){
 
 ChameleonDancer.prototype = Object.create(Dancer.prototype);
 ChameleonDancer.prototype.constructor = ChameleonDancer;
-ChameleonDancer.prototype.test = function() {
+ChameleonDancer.prototype.fly = function() {
   console.log(this.$node);
   this.$node.css({
     'transform':'rotate(3600deg)'
